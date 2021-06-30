@@ -76,6 +76,14 @@ div {
   display: block;
 }
 
+h1 {
+  margin-bottom: 16px;
+}
+
+.subheading {
+  margin-bottom: 40px;
+}
+
 .flexContainer {
   padding-left: 248px;
 }
@@ -93,7 +101,8 @@ div {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fafafa;
+  background-color: #7c6465;
+  color: #FBFAF5;
 }
 
 .sbHeader {
@@ -117,6 +126,10 @@ div {
 
 .map {
   background-size: contain;
+}
+
+.rowImg {
+  margin-bottom: 56px;
 }
 
 .infoContainer {
