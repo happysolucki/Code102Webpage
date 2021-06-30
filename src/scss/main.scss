@@ -32,6 +32,10 @@ h1 {
   height: 100%;
   background-color: #7c6465;
   color: #FBFAF5;
+
+  & h4 {
+    padding: 0 24px;
+  }
 }
 
 .sbHeader {
