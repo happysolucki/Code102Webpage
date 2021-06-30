@@ -1,2 +1,59 @@
 @use 'abstracts' as *;
 @use 'base';
+
+div {
+  display: block;
+}
+
+.flexContainer {
+  padding-left: 248px;
+}
+
+.sidebarContainer {
+  z-index: 12;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgb(250, 250, 250);
+}
+
+.sbHeader {
+  padding: 30px 24px 24px 24px;
+  width: 256px;
+}
+.mainContainer {
+  padding: 40px 52px 0px 52px;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 304px;
+  max-width: 1080px;
+}
+
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 auto;
+}
+
+.map {
+ background-size: contain;
+}
+
+.infoContainer {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.card {
+  flex-basis: 33.33333333%;
+  max-width: 33.33333333%;
+  padding: 0 16px;
+}
