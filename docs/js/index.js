@@ -1,10 +1,12 @@
 const checkNation = function determineFavNation() {
-  let nation = prompt("Which nation are you a part of? Water, Earth, Fire, or Air?").toLowerCase();
+  let nation;
+  while (nation != 'water' && nation != 'earth' && nation != 'fire' && nation != 'air') {
+    nation = prompt('Which nation are you a part of? Water, Earth, Fire, or Air?').toLowerCase();
+  }
   if (nation === 'water') return 'Water Tribe';
   if (nation === 'earth') return 'Earth Kingom';
   if (nation === 'fire') return 'Fire Nation';
   if (nation === 'air') return 'Air Nomads';
-  return checkNation();
 }
 
 const checkFavChar = function determineFavoriteCharacter() {
@@ -35,15 +37,5 @@ const repeatImg = function repeatImage() {
   bar.appendChild(placeholder);
 }
 
-// function colorChanger() {
-//   let colorChange = prompt('What color do you want your background?').toLowerCase();
-//   if (colorChange === 'purple') {
-//     document.body.style.backgroundColor = 'purple';
-//   }
-// }
-
 document.addEventListener('DOMContentLoaded', checkFavChar);
 document.addEventListener('DOMContentLoaded', repeatImg);
-// repeatImg();
-// checkFavChar();
-// colorChanger();
