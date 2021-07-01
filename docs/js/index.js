@@ -21,6 +21,20 @@ const checkFavChar = function determineFavoriteCharacter() {
   bar.appendChild(userFavs);
 }
 
+const repeatImg = function repeatImage() {
+  let imgVal = parseInt(prompt('How many air symbols do you want to show on the sidebar?'));
+  let bar = document.querySelector('.sidebar');
+  let placeholder = document.createElement('div');
+  placeholder.classList.add('starContainer');
+  for (let i = 0; i < imgVal; i++) {
+    let img = document.createElement('img');
+    img.src = 'https://i.pinimg.com/originals/d5/bb/51/d5bb51f166808467c89b63aedcc86c41.png';
+    img.classList.add('star');
+    placeholder.appendChild(img);
+  }
+  bar.appendChild(placeholder);
+}
+
 // function colorChanger() {
 //   let colorChange = prompt('What color do you want your background?').toLowerCase();
 //   if (colorChange === 'purple') {
@@ -28,6 +42,8 @@ const checkFavChar = function determineFavoriteCharacter() {
 //   }
 // }
 
-document.addEventListener('DOMContentLoaded', checkFavChar)
+document.addEventListener('DOMContentLoaded', checkFavChar);
+document.addEventListener('DOMContentLoaded', repeatImg);
+// repeatImg();
 // checkFavChar();
 // colorChanger();
