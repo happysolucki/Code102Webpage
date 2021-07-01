@@ -7,7 +7,7 @@ const checkNation = function determineFavNation(nation) {
 
 const checkFavChar = function determineFavoriteCharacter() {
   let favNation = prompt("Which nation are you a part of? Water, Earth, Fire, or Air?").toLowerCase();
-  let favChar = prompt(`Who's your favorite character from the ${checkNation(favNation)}`);
+  let favChar = prompt(`Who's your favorite character from the ${checkNation(favNation)}?`);
   let bar = document.querySelector('.sidebar')
   let userFavs = document.createElement('div');
   let nation = document.createElement("h4");
@@ -19,4 +19,13 @@ const checkFavChar = function determineFavoriteCharacter() {
   bar.appendChild(userFavs);
 }
 
+// function colorChanger() {
+//   let colorChange = prompt('What color do you want your background?').toLowerCase();
+//   if (colorChange === 'purple') {
+//     document.body.style.backgroundColor = 'purple';
+//   }
+// }
+
 document.addEventListener('DOMContentLoaded', checkFavChar)
+// checkFavChar();
+// colorChanger();
